@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View { //basic layout for day selection
         //title
         VStack{
-            Text("Scheduling App")
+            Text("Stinky Phooc")
                 .font(.title)
                 .bold()
             
@@ -64,11 +64,13 @@ struct ContentView: View {
                     }label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 25)
+                                .strokeBorder(.blue, lineWidth: 3)
+                                .fill(.clear)
                                 .frame(height: 100)
                             Text("Opening Shift")
                                 .bold()
                                 .font(.title2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.blue)
                         }
                     }
                     Button{
@@ -76,11 +78,13 @@ struct ContentView: View {
                     }label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 25)
+                                .strokeBorder(.blue, lineWidth: 3)
+                                .fill(.clear)
                                 .frame(height: 100)
                             Text("Day Shift")
                                 .bold()
                                 .font(.title2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.blue)
                         }
                     }
                     Button{
@@ -88,11 +92,13 @@ struct ContentView: View {
                     }label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 25)
+                                .strokeBorder(.blue, lineWidth: 3)
+                                .fill(.clear)
                                 .frame(height: 100)
                             Text("Closing Shift")
                                 .bold()
                                 .font(.title2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.blue)
                         }
                     }
                 }
